@@ -1,0 +1,130 @@
+/* QFrame */
+QFrame{
+      background-color: #FCFCFC;
+      border: 1px solid #FCFCFC;
+      border-top-left-radius:4px;
+      border-top-right-radius:4px;
+      border-bottom-left-radius:4px;
+      border-bottom-right-radius:4px;
+}
+/* AreaResizeWidth */
+QFrame#AreaResizeWidth{
+      background-image: url(resources/img/img_resize_width.png);
+}
+QSpinBox#sb_width{
+      border: none;
+      background-color: rgba(0, 0, 0, 1);
+      color: #515456;
+      font-family: Consolas;
+      font-weight: bold;
+      font-size: 16px;
+      selection-background-color: #22B573;
+      selection-color: #FCFCFC;
+}
+/* AreaResizeHeight */
+QFrame#AreaResizeHeight{
+      background-image: url(resources/img/img_resize_height.png);
+}
+QSpinBox#sb_height{
+      border: none;
+      background-color: rgba(0, 0, 0, 1);
+      color: #515456;
+      font-family: Consolas;
+      font-weight: bold;
+      font-size: 16px;
+      selection-background-color: #22B573;
+      selection-color: #FCFCFC;
+}
+/* AreaRotateRight */
+QFrame#AreaRotateRight{
+      background-image: url(resources/img/img_rotate_right.png);
+}
+/* AreaRotateLeft */
+QFrame#AreaRotateLeft{
+      background-image: url(resources/img/img_rotate_left.png);
+}
+/* AreaConcatenateHorizontal */
+QFrame#AreaConcatenateHorizontal{
+      background-image: url(resources/img/img_concatenate_horizontal.png);
+}
+/* AreaConcatenateVertical */
+QFrame#AreaConcatenateVertical{
+      background-image: url(resources/img/img_concatenate_vertical.png);
+}
+/* AreaPngquant */
+QFrame#AreaPngquant{
+      background-image: url(resources/img/img_feather.png);
+}
+/* AreaConvert */
+QFrame#AreaConvert{
+}
+QRadioButton#rb_png::indicator{
+      width: 80;
+      height: 20;
+}
+QRadioButton#rb_png::indicator::unchecked{
+      image: url(resources/img/ext_png_unchecked.png);
+}
+QRadioButton#rb_png::indicator::unchecked::hover{
+      image: url(resources/img/ext_png_unchecked_hover.png);
+}
+QRadioButton#rb_png::indicator::unchecked::pressed{
+      image: url(resources/img/ext_png_unchecked_pressed.png);
+}
+QRadioButton#rb_png::indicator::checked{
+      image: url(resources/img/ext_png_checked.png);
+}
+QRadioButton#rb_png::indicator::checked::hover{
+      image: url(resources/img/ext_png_checked_hover.png);
+}
+QRadioButton#rb_png::indicator::checked::pressed{
+      image: url(resources/img/ext_png_checked_pressed.png);
+}
+QRadioButton#rb_jpg::indicator{
+      width: 80;
+      height: 20;
+}
+QRadioButton#rb_jpg::indicator::unchecked{
+      image: url(resources/img/ext_jpg_unchecked.png);
+}
+QRadioButton#rb_jpg::indicator::unchecked::hover{
+      image: url(resources/img/ext_jpg_unchecked_hover.png);
+}
+QRadioButton#rb_jpg::indicator::unchecked::pressed{
+      image: url(resources/img/ext_jpg_unchecked_pressed.png);
+}
+QRadioButton#rb_jpg::indicator::checked{
+      image: url(resources/img/ext_jpg_checked.png);
+}
+QRadioButton#rb_jpg::indicator::checked::hover{
+      image: url(resources/img/ext_jpg_checked_hover.png);
+}
+QRadioButton#rb_jpg::indicator::checked::pressed{
+      image: url(resources/img/ext_jpg_checked_pressed.png);
+}
+QRadioButton#rb_bmp::indicator{
+      width: 80;
+      height: 20;
+}
+QRadioButton#rb_bmp::indicator::unchecked{
+      image: url(resources/img/ext_bmp_unchecked.png);
+}
+QRadioButton#rb_bmp::indicator::unchecked::hover{
+      image: url(resources/img/ext_bmp_unchecked_hover.png);
+}
+QRadioButton#rb_bmp::indicator::unchecked::pressed{
+      image: url(resources/img/ext_bmp_unchecked_pressed.png);
+}
+QRadioButton#rb_bmp::indicator::checked{
+      image: url(resources/img/ext_bmp_checked.png);
+}
+QRadioButton#rb_bmp::indicator::checked::hover{
+      image: url(resources/img/ext_bmp_checked_hover.png);
+}
+QRadioButton#rb_bmp::indicator::checked::pressed{
+      image: url(resources/img/ext_bmp_checked_pressed.png);
+}
+/*MainWidget*/
+QWidget#MainWidget{
+      background-color: #FCFCFC;
+}
