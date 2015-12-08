@@ -7,13 +7,13 @@ base = None
 if sys.platform == "win32":
     base = "Win32GUI"
 
-exe = Executable(script = "hachi-mai.py",
+exe = Executable(script = "gahen.py",
                  icon = "resources/img/icon.ico",
                  base = base)
 
-setup(name = "Hachi-Mai",
-      version = "0.0.3",
-      description = "batch-image-processor",
+setup(name = "Gahen",
+      version = "0.0.5",
+      description = "yet-another-batch-image-processor",
       executables = [exe],
       options = {"build_exe": {
                  "includes": includes},

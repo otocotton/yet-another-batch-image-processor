@@ -14,7 +14,7 @@ class DropArea(QtGui.QFrame):
         # ('-') essentials
         self.setObjectName("DropArea")
         self.setAcceptDrops(True)
-        self.setFixedSize(120, 120)
+        self.setFixedSize(128, 128)
 
     def fileGate(self, event):
         # ('o') detects dragged-in files
@@ -52,7 +52,7 @@ class AreaResizeWidth(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             print("entered in the 'AreaResizeWidth'")
-            self.setStyleSheet("QFrame#AreaResizeWidth{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaResizeWidth{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -94,7 +94,7 @@ class AreaResizeHeight(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             print("entered in the 'AreaResizeHeight'")
-            self.setStyleSheet("QFrame#AreaResizeHeight{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaResizeHeight{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -121,7 +121,7 @@ class AreaRotateRight(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             print("entered in the 'AreaResizeHeight'")
-            self.setStyleSheet("QFrame#AreaRotateRight{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaRotateRight{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -147,7 +147,7 @@ class AreaRotateLeft(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             print("entered in the 'AreaRotateLeft'")
-            self.setStyleSheet("QFrame#AreaRotateLeft{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaRotateLeft{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -175,7 +175,7 @@ class AreaConcatenateHorizontal(DropArea):
             event.ignore()
         elif self.fileGate(event):
             print("entered in the 'AreaConcatenateHorizontal'")
-            self.setStyleSheet("QFrame#AreaConcatenateHorizontal{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaConcatenateHorizontal{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -204,7 +204,7 @@ class AreaConcatenateVertical(DropArea):
             event.ignore()
         elif self.fileGate(event):
             print("entered in the 'AreaConcatenateVertical'")
-            self.setStyleSheet("QFrame#AreaConcatenateVertical{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaConcatenateVertical{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -232,7 +232,7 @@ class AreaPngquant(DropArea):
             f, e = os.path.splitext([url.toLocalFile() for url in event.mimeData().urls()][0])
             if e == ".png":
                 print("entered in the 'AreaPngquant'")
-                self.setStyleSheet("QFrame#AreaPngquant{border: 1px solid #CCCCCC;}")
+                self.setStyleSheet("QFrame#AreaPngquant{border: 1px solid #B3B3B3;}")
             else:
                 print("pngquant is only for PNG fiels")
                 event.ignore()
@@ -276,6 +276,7 @@ class AreaConvert(DropArea):
         self.vb.addWidget(self.rb_png)
         self.vb.addWidget(self.rb_jpg)
         self.vb.addWidget(self.rb_bmp)
+        self.vb.setContentsMargins(-20,0,0,0)
         self.vb.setAlignment(QtCore.Qt.AlignCenter)
         self.setLayout(self.vb)
 
@@ -310,7 +311,7 @@ class AreaConvert(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             print("entered in the 'AreaConvert'")
-            self.setStyleSheet("QFrame#AreaConvert{border: 1px solid #CCCCCC;}")
+            self.setStyleSheet("QFrame#AreaConvert{border: 1px solid #B3B3B3;}")
 
     def dragLeaveEvent(self, event):
         # ('o') called when files leave from the area
@@ -332,7 +333,7 @@ class MainWidget(QtGui.QWidget):
         # ('-') essentials
         self.setObjectName("MainWidget")
         self.setWindowTitle("Gahen")
-        self.setFixedSize(580, 300)
+        self.setFixedSize(562, 286) # 128*4+10*5, 128*2+10*3
         self.setCSS()
         # ('-') yum yum
         self.main_grid = QtGui.QGridLayout()
