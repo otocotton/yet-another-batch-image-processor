@@ -39,7 +39,7 @@ class AreaResizeWidth(DropArea):
         self.sb_width.setMaximum(2000)
         self.sb_width.setSingleStep(10)
         self.sb_width.setValue(500)
-        self.sb_width.setFixedSize(40, 28)
+        self.sb_width.setFixedSize(60, 30)
         self.sb_width.setAlignment(QtCore.Qt.AlignCenter)
         self.sb_width.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
 
@@ -81,7 +81,7 @@ class AreaResizeHeight(DropArea):
         self.sb_height.setMaximum(2000)
         self.sb_height.setSingleStep(10)
         self.sb_height.setValue(500)
-        self.sb_height.setFixedSize(40, 28)
+        self.sb_height.setFixedSize(60, 30)
         self.sb_height.setAlignment(QtCore.Qt.AlignCenter)
         self.sb_height.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
 
