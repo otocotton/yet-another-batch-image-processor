@@ -12,7 +12,7 @@ exe = Executable(script = "gahen.py",
                  base = base)
 
 setup(name = "Gahen",
-      version = "0.0.7",
+      version = "0.0.8",
       description = "yet-another-batch-image-processor",
       executables = [exe],
       options = {"build_exe": {

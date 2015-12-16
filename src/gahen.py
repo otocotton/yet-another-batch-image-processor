@@ -230,7 +230,7 @@ class AreaPngquant(DropArea):
         # ('o') called when files are dragged-in the area
         if self.fileGate(event):
             f, e = os.path.splitext([url.toLocalFile() for url in event.mimeData().urls()][0])
-            if e == ".png":
+            if e.lower() == ".png":
                 print("entered in the 'AreaPngquant'")
                 self.setStyleSheet("QFrame#AreaPngquant{border: 1px solid #B3B3B3;}")
             else:
